@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular Rest Read All</title>
+    <!--Using a content delivery network - watch if they go down so does your site-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body data-ng-app>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PSU App</a>
+                <button type="button" class="btn btn-default navbar-btn">Sign Out</button>
+                <p class="navbar-text">Signed in as Joe Oakes</p>
+            </div>
+        </div>
+    </nav>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Course Schedule</h3>
+        </div>
+
+        <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+            <!--<p >-->
+                <!-- Beginning of the table -->
+            <div class="container-fluid ">
+                <table data-ng-repeat="customer in customers" class="table table-hover container-fluid container">
+                    <tr>
+
+                        <td class="form-group"><strong>ID</strong> </td>
+                        <td class="form-group"><strong>Course ID</strong></td>
+                        <td class="form-group"><strong>Coure Title</strong></td>
+                        <td class="form-group"><strong>Lecturer</strong></td>
+                        <td class="form-group"><strong>Credits</strong></td>
+                    </tr>
+
+                    <!-- First row -->
+
+                    <tr>
+                        <td class="form-group">
+
+                            {{ customer.CustomerID }}
+
+                        </td>
+                        <td class="form-group">
+
+                            {{ customer.CustomerName }}
+
+                        </td>
+
+                        <td class="form-group">
+
+                            {{ customer.CustomerEmail }}
+
+                        </td>
+                        <td class="form-group">
+
+                            {{ customer.CustomerPhone }}
+
+
+                        </td>
+                        <td class="form-group">
+
+                            {{ customer.CustomerSSN }}
+
+                        </td>
+                    </tr>
+
+                    <!-- Buttons -->
+
+
+
+
+
+                </table>
+
+
+            </div>
+            
+            
+            
+            <!--</p>-->
+            <p><input type="submit" id="submit" value="Submit" /></p>
+        </form>
+
+       
+       
+    </div>
+</body>
+
+
+<script>
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL
+            var query = "http://localhost:50491/RESTService.svc/ReadAll";
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.customers = json;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+</script>
+</html>

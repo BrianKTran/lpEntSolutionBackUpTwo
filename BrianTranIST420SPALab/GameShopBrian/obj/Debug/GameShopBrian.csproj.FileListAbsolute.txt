@@ -1,0 +1,47 @@
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll.config
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\GameShopBrian.pdb
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.dll
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.pdb
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\EntityFramework.dll
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\EntityFramework.SqlServer.dll
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\EntityFramework.xml
+C:\Users\Brian\Desktop\IST 420 LAB 4\GameShopBrian\GameShopBrian\bin\EntityFramework.SqlServer.xml
+E:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.dll
+E:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.pdb
+E:\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll.config
+E:\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll
+E:\GameShopBrian\GameShopBrian\bin\GameShopBrian.pdb
+E:\GameShopBrian\GameShopBrian\bin\EntityFramework.xml
+E:\GameShopBrian\GameShopBrian\bin\EntityFramework.SqlServer.xml
+E:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
+I:\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll.config
+I:\GameShopBrian\GameShopBrian\bin\GameShopBrian.dll
+I:\GameShopBrian\GameShopBrian\bin\GameShopBrian.pdb
+I:\GameShopBrian\GameShopBrian\bin\EntityFramework.dll
+I:\GameShopBrian\GameShopBrian\bin\EntityFramework.SqlServer.dll
+I:\GameShopBrian\GameShopBrian\bin\EntityFramework.xml
+I:\GameShopBrian\GameShopBrian\bin\EntityFramework.SqlServer.xml
+I:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
+I:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.dll
+I:\GameShopBrian\GameShopBrian\obj\Debug\GameShopBrian.pdb
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\bin\GameShopBrian.dll.config
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\bin\GameShopBrian.dll
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\bin\GameShopBrian.pdb
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\bin\EntityFramework.xml
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\bin\EntityFramework.SqlServer.xml
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\obj\Debug\GameShopBrian.dll
+X:\Downloads\GameShopBrianLab5 (1)\GameShopBrianLab5\GameShopBrian\obj\Debug\GameShopBrian.pdb
+C:\Users\Brian\Desktop\lpEntSolution\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.dll.config
+C:\Users\Brian\Desktop\lpEntSolution\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.dll
+C:\Users\Brian\Desktop\lpEntSolution\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.pdb
+C:\Users\Brian\Desktop\lpEntSolution\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.dll
+C:\Users\Brian\Desktop\lpEntSolution\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.pdb
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.dll.config
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.dll
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.pdb
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.dll
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.pdb

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    
+
+    <select id="shipping">
+
+        <option value="UPS">UPS</option>
+
+        <option value="FedEx">FedEx</option>
+
+    </select>
+
+    <select id="state">
+
+        <option value="PA">PA</option>
+
+        <option value="NJ">NJ</option>
+
+        <option value="NY">NY</option>
+
+    </select>
+
+
+    <input type="button" id="Submit" value="Submit" />
+
+    <input type="text" id="result" />
+
+    <script>
+
+        $(document).ready(function (event) {
+
+            //When Submit button is clicked
+
+            $("#Submit").click(function (event) {
+
+                var query = "http://localhost:50491/RESTService.svc/GetInvoiceTotal?Shipping=" +
+
+                $('#shipping').val() + "&State=" + $('#state').val();
+
+                $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+
+                    .done(function (json) {
+
+                        $("#result").val(json);
+
+                    })
+
+                    .fail(function () {
+
+                        alert("Error");
+
+                    });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

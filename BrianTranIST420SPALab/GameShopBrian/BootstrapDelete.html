@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Rest Delete</title>
+    <!--Using a content delivery network - watch if they go down so does your site-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body data-ng-app>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PSU App</a>
+                <button type="button" class="btn btn-default navbar-btn">Sign Out</button>
+                <p class="navbar-text">Signed in as Joe Oakes</p>
+            </div>
+        </div>
+    </nav>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Customer Information</h3>c
+        </div>
+        <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+            <div class="form-group">
+                
+                <label for="customerID" class="col-xs-2 control-label">Customer ID:</label>
+                
+                <div class="col-sm-10">
+                    <input maxlength="40" class="form-control" id="customerID" placeholder="Customer Id" data-ng-model="customerID" required>
+                </div>
+              
+            </div>
+            <p><input type="submit" id="submit" value="Submit" /></p>
+
+            <p>Response: {{ response }}</p>
+
+        </form>
+
+        
+    </div>
+
+    
+    <script type="text/javascript">
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL
+            var query = "http://localhost:50491/RESTService.svc/Delete?";
+            query += "customerID=" + $scope.customerID;
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.response = json;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+    </script>
+</body>
+</html>
+

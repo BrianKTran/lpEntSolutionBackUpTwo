@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Rest Read</title>
+    <!--Using a content delivery network - watch if they go down so does your site-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body data-ng-app>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PSU App</a>
+                <button type="button" class="btn btn-default navbar-btn">Sign Out</button>
+                <p class="navbar-text">Signed in as Joe Oakes</p>
+            </div>
+        </div>
+    </nav>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Customer Information</h3>
+        </div>
+        <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+            <div class="form-group">
+                <label for="customerName" class="col-xs-2 control-label">Customer Id:</label>
+                <div class="col-sm-10">
+                    <input maxlength="40" class="form-control" id="customerID" placeholder="Customer ID" data-ng-model="customerID" required>
+                </div>
+
+                <label for="customerName" class="col-xs-2 control-label">Customer Name:</label>
+                <div class="col-sm-10">
+                    <input maxlength="40" class="form-control" id="customerName" placeholder="Customer Name" data-ng-model="customerName" >
+                </div>
+                <label for="customerSSN" class="col-xs-2 control-label">Customer SSN:</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="11" class="form-control" id="customerSSN" placeholder="Customer SSN" data-ng-model="customerSSN" >
+                </div>
+                <label for="customerEmail" class="col-xs-2 control-label">Customer Email:</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="25" class="form-control" id="customerEmail" placeholder="Customer Email" data-ng-model="customerEmail" >
+                </div>
+                <label for="customerPhone" class="col-xs-2 control-label">Customer Phone:</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="15" class="form-control" id="customerPhone" placeholder="Customer Phone" data-ng-model="customerPhone" required>
+                </div>
+            </div>
+            <p><input type="submit" id="submit" value="Submit" /></p>
+            <p>Response: {{response}} </p>
+        </form>
+
+      
+    </div>
+
+   
+    <script type="text/javascript">
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL
+            var query = "http://localhost:50491/RESTService.svc/Update?"
+            query += "customerID=" + $scope.customerID;
+            query += "&customerName=" + $scope.customerName;
+            query += "&customerSSN=" + $scope.customerSSN;
+            query += "&customerEmail=" + $scope.customerEmail;
+            query += "&customerPhone=" + $scope.customerPhone;
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.response = json;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+    </script>
+</body>
+</html>

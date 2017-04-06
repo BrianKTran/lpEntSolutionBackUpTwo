@@ -1,0 +1,38 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Angular Rest Read</title>
+<!--Using a content delivery network - watch if they go down so does your site-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+</head>
+  <body data-ng-app>
+    <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+    <p>Customer ID: <input data-ng-model="customerID" /></p>
+    <p>Customer Name: <input data-ng-model="customerName" /></p>
+    <p>Customer SSN: <input data-ng-model="customerSSN" /></p>
+    <p>Customer Email: <input data-ng-model="customerEmail" /></p>
+    <p>Customer Phone: <input data-ng-model="customerPhone" /></p>
+    <p><input type="submit" id="submit" value="Submit" /></p>
+    </form>
+</body>
+<script type="text/javascript">
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL 
+            var query = "http://localhost:50491/RESTService.svc/Read?";
+            query += "customerID=" + $scope.customerID;
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.customerID = json.CustomerID;
+                    $scope.customerName = json.CustomerName;
+                    $scope.customerSSN = json.CustomerSSN;
+                    $scope.customerEmail = json.CustomerEmail;
+                    $scope.customerPhone = json.CustomerPhone;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+</script>
+</html>

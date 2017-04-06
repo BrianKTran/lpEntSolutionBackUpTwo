@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ist420grp5Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCustomerBrianTran">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerSSN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerActive" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="ist420grp5Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCustomerBrianTrans" EntityType="Self.tblCustomerBrianTran" />
+    <EntitySet Name="tblInventoryBrianTrans" EntityType="ist420grp5Model1.tblInventoryBrianTran" />
+  </EntityContainer>
+  <EntityType Name="tblInventoryBrianTran">
+    <Key>
+      <PropertyRef Name="fldInventoryID" />
+    </Key>
+    <Property Name="fldInventoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldInventoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fldInventoryPrice" Type="Single" Nullable="false" />
+  </EntityType>
+</Schema>

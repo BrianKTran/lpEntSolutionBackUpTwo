@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="result"> </input>
+</body>
+<script type="text/javascript">
+    //Make sure to change the host and port to match the URL
+    var query = "http://localhost:50491/RESTService.svc/";
+    $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+        .done(function (json) {
+            $("#result").val(json);
+        })
+        .fail(function () {
+            alert("Error");
+        });
+</script>
+</html>
+
+

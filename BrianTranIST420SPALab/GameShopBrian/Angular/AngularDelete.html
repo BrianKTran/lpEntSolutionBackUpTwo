@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Angular Rest Delete</title>
+<!--Using a content delivery network - watch if they go down so does your site-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+</head>
+<body data-ng-app>
+     <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+     <p>Customer Id: <input data-ng-model="customerID" /></p>
+     <p><input type="submit" id="submit" value="Submit" /></p>
+    <p>Response: {{ response }}</p>
+</form>
+</body>
+<script type="text/javascript">
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL 
+            var query = "http://localhost:50491/RESTService.svc/Delete?";
+            query += "customerID=" + $scope.customerID;
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.response = json;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="20e7a837708b40e0a95ef9b1f4a5b007" Name="Diagram1">
+        <EntityTypeShape EntityType="ist420grp5Model.tblInventoryBrianTran" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ist420grp5Model.ClarkeTblStudent" Width="1.5" PointX="0.75" PointY="7.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.DatabaseLog" Width="1.5" PointX="2.75" PointY="7.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.dharma_concentration" Width="1.5" PointX="4.75" PointY="7.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.dharma_ethicalconduct" Width="1.5" PointX="0.75" PointY="11.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.dharma_users" Width="1.5" PointX="2.75" PointY="11.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.dharma_wisdom" Width="1.5" PointX="4.75" PointY="11.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.ErrorLog" Width="1.5" PointX="6.75" PointY="12.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.Login" Width="1.5" PointX="0.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.sysdiagram" Width="1.5" PointX="8.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblCustomer" Width="1.5" PointX="10.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblCustomerBatschelet" Width="1.5" PointX="12.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblCustomerBrianTran" Width="1.5" PointX="0.75" PointY="18.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblCustomerTully" Width="1.5" PointX="14.75" PointY="12.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblInventory" Width="1.5" PointX="5.75" PointY="16.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblInventoryBatschelet" Width="1.5" PointX="14.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblInventoryJhonPierre" Width="1.5" PointX="14.75" PointY="18.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblInventoryTully" Width="1.5" PointX="16.75" PointY="6.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblStudentCael" Width="1.5" PointX="16.75" PointY="9.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblStudentDuntze" Width="1.5" PointX="16.75" PointY="12.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblStudentLo" Width="1.5" PointX="16.75" PointY="15.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblStudentRao" Width="1.5" PointX="16.75" PointY="18.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.tblStudentZavaglia" Width="1.5" PointX="0.75" PointY="21.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.User" Width="1.5" PointX="14.75" PointY="21.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.Department" Width="1.5" PointX="12.25" PointY="82.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.Employee" Width="1.5" PointX="5.25" PointY="67.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.EmployeeDepartmentHistory" Width="1.5" PointX="14.5" PointY="69" />
+        <EntityTypeShape EntityType="ist420grp5Model.EmployeePayHistory" Width="1.5" PointX="7.5" PointY="82.125" />
+        <EntityTypeShape EntityType="ist420grp5Model.JobCandidate" Width="1.5" PointX="7.5" PointY="65.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.Shift" Width="1.5" PointX="12.25" PointY="79.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.Address" Width="1.5" PointX="12" PointY="75.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.AddressType" Width="1.5" PointX="12" PointY="57.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.BusinessEntity" Width="1.5" PointX="6.75" PointY="38.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.BusinessEntityAddress" Width="1.5" PointX="14.25" PointY="57.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.BusinessEntityContact" Width="1.5" PointX="12" PointY="51.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.ContactType" Width="1.5" PointX="9.75" PointY="42.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.CountryRegion" Width="1.5" PointX="7.5" PointY="78.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.EmailAddress" Width="1.5" PointX="12" PointY="62.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.Password" Width="1.5" PointX="12" PointY="70.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.Person" Width="1.5" PointX="9.75" PointY="62" />
+        <EntityTypeShape EntityType="ist420grp5Model.PersonPhone" Width="1.5" PointX="15" PointY="63.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.PhoneNumberType" Width="1.5" PointX="12.75" PointY="48.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.StateProvince" Width="1.5" PointX="9.75" PointY="75.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.BillOfMaterial" Width="1.5" PointX="8.25" PointY="28" />
+        <EntityTypeShape EntityType="ist420grp5Model.Culture" Width="1.5" PointX="3.75" PointY="17.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.Illustration" Width="1.5" PointX="3.75" PointY="15.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.Location" Width="1.5" PointX="12" PointY="20.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.Product" Width="1.5" PointX="6" PointY="25.125" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductCategory" Width="1.5" PointX="1.5" PointY="32.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductCostHistory" Width="1.5" PointX="8.25" PointY="46.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductDescription" Width="1.5" PointX="3.75" PointY="20.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductInventory" Width="1.5" PointX="14.25" PointY="24.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductListPriceHistory" Width="1.5" PointX="8.25" PointY="24.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductModel" Width="1.5" PointX="3.75" PointY="24.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductModelIllustration" Width="1.5" PointX="6" PointY="22.125" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductModelProductDescriptionCulture" Width="1.5" PointX="6" PointY="19" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductPhoto" Width="1.5" PointX="9" PointY="20.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductProductPhoto" Width="1.5" PointX="11.25" PointY="24.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductReview" Width="1.5" PointX="8.25" PointY="52.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductSubcategory" Width="1.5" PointX="3.75" PointY="32.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.ScrapReason" Width="1.5" PointX="6" PointY="35.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.TransactionHistory" Width="1.5" PointX="8.25" PointY="58.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.TransactionHistoryArchive" Width="1.5" PointX="16.75" PointY="21.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.UnitMeasure" Width="1.5" PointX="3.75" PointY="28.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.WorkOrder" Width="1.5" PointX="8.25" PointY="33" />
+        <EntityTypeShape EntityType="ist420grp5Model.WorkOrderRouting" Width="1.5" PointX="13.5" PointY="32.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductVendor" Width="1.5" PointX="11.25" PointY="27.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.PurchaseOrderDetail" Width="1.5" PointX="11.25" PointY="33" />
+        <EntityTypeShape EntityType="ist420grp5Model.PurchaseOrderHeader" Width="1.5" PointX="9" PointY="6.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.ShipMethod" Width="1.5" PointX="12" PointY="8" />
+        <EntityTypeShape EntityType="ist420grp5Model.Vendor" Width="1.5" PointX="9" PointY="38.125" />
+        <EntityTypeShape EntityType="ist420grp5Model.CountryRegionCurrency" Width="1.5" PointX="15" PointY="45.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.CreditCard" Width="1.5" PointX="12" PointY="42.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.Currency" Width="1.5" PointX="9.75" PointY="11.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.CurrencyRate" Width="1.5" PointX="12" PointY="11.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.Customer" Width="1.5" PointX="12" PointY="65.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.PersonCreditCard" Width="1.5" PointX="14.25" PointY="53.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesOrderDetail" Width="1.5" PointX="16.5" PointY="28" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesOrderHeader" Width="1.5" PointX="14.25" PointY="0.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesOrderHeaderSalesReason" Width="1.5" PointX="16.5" PointY="3.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesPerson" Width="1.5" PointX="7.5" PointY="68.375" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesPersonQuotaHistory" Width="1.5" PointX="9.75" PointY="79.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesReason" Width="1.5" PointX="14.25" PointY="9.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesTaxRate" Width="1.5" PointX="12" PointY="85.875" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesTerritory" Width="1.5" PointX="7.5" PointY="73.625" />
+        <EntityTypeShape EntityType="ist420grp5Model.SalesTerritoryHistory" Width="1.5" PointX="14.75" PointY="72.75" />
+        <EntityTypeShape EntityType="ist420grp5Model.ShoppingCartItem" Width="1.5" PointX="8.25" PointY="49.25" />
+        <EntityTypeShape EntityType="ist420grp5Model.SpecialOffer" Width="1.5" PointX="12" PointY="38" />
+        <EntityTypeShape EntityType="ist420grp5Model.SpecialOfferProduct" Width="1.5" PointX="14.25" PointY="28.5" />
+        <EntityTypeShape EntityType="ist420grp5Model.Store" Width="1.5" PointX="9.75" PointY="69" />
+        <EntityTypeShape EntityType="ist420grp5Model.ProductDocument" Width="1.5" PointX="8.25" PointY="55.875" />
+        <AssociationConnector Association="ist420grp5Model.FK_EmployeeDepartmentHistory_Department_DepartmentID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Employee_Person_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_EmployeePayHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_JobCandidate_Employee_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PurchaseOrderHeader_Employee_EmployeeID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesPerson_Employee_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_EmployeeDepartmentHistory_Shift_ShiftID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityAddress_Address_AddressID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_Address_BillToAddressID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_Address_ShipToAddressID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityAddress_AddressType_AddressTypeID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Person_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Store_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Vendor_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityContact_ContactType_ContactTypeID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BusinessEntityContact_Person_PersonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesTerritory_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_StateProvince_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_EmailAddress_Person_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Password_Person_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Customer_Person_PersonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PersonCreditCard_Person_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PersonPhone_Person_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesTaxRate_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="ist420grp5Model.FK_StateProvince_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BillOfMaterials_Product_ComponentID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BillOfMaterials_Product_ProductAssemblyID" />
+        <AssociationConnector Association="ist420grp5Model.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductModelProductDescriptionCulture_Culture_CultureID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductModelIllustration_Illustration_IllustrationID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductInventory_Location_LocationID" />
+        <AssociationConnector Association="ist420grp5Model.FK_WorkOrderRouting_Location_LocationID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Product_ProductModel_ProductModelID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Product_ProductSubcategory_ProductSubcategoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Product_UnitMeasure_SizeUnitMeasureCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_Product_UnitMeasure_WeightUnitMeasureCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductCostHistory_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductDocument_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductInventory_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductListPriceHistory_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductProductPhoto_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductReview_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductVendor_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PurchaseOrderDetail_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ShoppingCartItem_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SpecialOfferProduct_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_TransactionHistory_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_WorkOrder_Product_ProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductSubcategory_ProductCategory_ProductCategoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductModelIllustration_ProductModel_ProductModelID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" />
+        <AssociationConnector Association="ist420grp5Model.FK_WorkOrder_ScrapReason_ScrapReasonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductVendor_UnitMeasure_UnitMeasureCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_WorkOrderRouting_WorkOrder_WorkOrderID" />
+        <AssociationConnector Association="ist420grp5Model.FK_ProductVendor_Vendor_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" />
+        <AssociationConnector Association="ist420grp5Model.FK_PurchaseOrderHeader_Vendor_VendorID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_ShipMethod_ShipMethodID" />
+        <AssociationConnector Association="ist420grp5Model.FK_CountryRegionCurrency_Currency_CurrencyCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_PersonCreditCard_CreditCard_CreditCardID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_CreditCard_CreditCardID" />
+        <AssociationConnector Association="ist420grp5Model.FK_CurrencyRate_Currency_FromCurrencyCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_CurrencyRate_Currency_ToCurrencyCode" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Customer_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Customer_Store_StoreID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_Customer_CustomerID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_SalesPerson_SalesPersonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeader_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesPerson_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" />
+        <AssociationConnector Association="ist420grp5Model.FK_Store_SalesPerson_SalesPersonID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="ist420grp5Model.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

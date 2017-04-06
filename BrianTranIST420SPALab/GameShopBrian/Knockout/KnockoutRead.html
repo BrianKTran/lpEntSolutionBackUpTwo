@@ -1,0 +1,37 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Knockout Rest Read</title>
+<!--Using a content delivery network - watch if they go down so does your site-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+</head>
+<body>
+<form data-bind="submit: onSubmit">
+    <p>customer ID: <input data-bind="value: customerID" /></p>
+    <p>customer Name: <input data-bind="value: customerName" /></p>
+    <p>customer SSN: <input data-bind="value: customerSSN" /></p>
+    <p>customer Email: <input data-bind="value: customerEmail" /></p>
+    <p>customer Phone: <input data-bind="value: customerPhone" /></p>
+    <p><button type="submit">Submit</button></p>
+</form></body>
+        <script type="text/javascript">
+            var viewModel = {
+                customerID: ko.observable(), customerName: ko.observable(),
+                customerSSN: ko.observable(), customerEmail: ko.observable(),
+                customerPhone: ko.observable(),
+                onSubmit: function (formElement) {
+                    //Make sure to change the host and port to match the URL 
+                    var query = "http://localhost:50491/RESTService.svc/Read?";
+                    query += "customerID=" + viewModel.customerID();
+                    $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                        .done(function (json) {
+                            viewModel.customerID(json.CustomerID);
+                            viewModel.customerName(json.CustomerName);
+                            viewModel.customerSSN(json.CustomerSSN);
+                            viewModel.customerEmail(json.CustomerEmail);
+                            viewModel.customerPhone(json.CustomerPhone);
+                        })
+                        .fail(function () { alert("Error");});
+                }  //Close the onSubmit binding
+            }; //Close the function MyViewModel code block
+            ko.applyBindings(viewModel);
+    </script>
+</html>

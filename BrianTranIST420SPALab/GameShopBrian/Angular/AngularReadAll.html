@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular Rest Read All</title>
+    <!--Using a content delivery network - watch if they go down so does your site-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+</head>
+<body data-ng-app>
+    <form data-ng-submit="submit()" data-ng-controller="Ctrl">
+        <p data-ng-repeat="customer in customers">
+            Customer ID: {{ customer.CustomerID }}
+            Customer Name: {{ customer.CustomerName }}
+            Customer SSN: {{ customer.CustomerSSN }}
+            Customer Email: {{ customer.CustomerEmail }}
+            Customer Phone: {{ customer.CustomerPhone }}
+        </p>
+        <p><input type="submit" id="submit" value="Submit" /></p>
+        </form>
+</body>
+<script>
+    function Ctrl($scope) {
+        $scope.submit = function () {
+            //Make sure to change the host and port to match the URL
+            var query = "http://localhost:50491/RESTService.svc/ReadAll";
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    $scope.customers = json;
+                    $scope.$apply();
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }
+    }
+</script>
+</html>

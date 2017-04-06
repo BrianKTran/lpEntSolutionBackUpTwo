@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Knockout Rest Create</title>
+    <!--Using a content delivery network - watch if they go down so does your site-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+</head>
+<body>
+    <form data-bind="submit: onSubmit">
+        <p>Customer Name: <input data-bind="value: customerName" /></p>
+        <p>Customer SSN: <input data-bind="value: customerSSN" /></p>
+        <p>Customer Email: <input data-bind="value: customerEmail" /></p>
+        <p>Customer Phone: <input data-bind="value: customerPhone" /></p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+    <p>Response: <span data-bind="text : response"></span></p>
+</body>
+<script type="text/javascript">
+    var viewModel = {
+        customerName: ko.observable(), customerSSN: ko.observable(),
+        customerEmail: ko.observable(), customerPhone: ko.observable(),
+        response: ko.observable(),
+        onSubmit: function (formElement) {
+            //Make sure to change the host and port to match the URL
+            var query = "http://localhost:50491/RESTService.svc/Create?";
+            query += "customerName=" + viewModel.customerName();
+            query += "&customerSSN=" + viewModel.customerSSN();
+            query += "&customerEmail=" + viewModel.customerEmail();
+            query += "&customerPhone=" + viewModel.customerPhone();
+            $.ajax({ url: query, crossDomain: true, dataType: 'json', type: 'GET' })
+                .done(function (json) {
+                    viewModel.response(json);
+                })
+                .fail(function () {
+                    alert("Error");
+                });
+        }  //Close the onSubmit binding
+    }; //Close the function MyViewModel code block
+    ko.applyBindings(viewModel);
+</script>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>
+
+		</TITLE>
+
+		<meta name="viewport"
+ content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+		<link href="gpaCalc/css/bootstrap.min.css" rel="stylesheet">
+	</HEAD>
+
+	<BODY>
+
+
+
+
+		<SCRIPT type="text/javascript" src="gpaCalc/JS/functions.js"></SCRIPT>
+
+
+
+		<div id="GPACalc" class="container-fluid container " >
+
+		
+
+		<!-- Beginning of the table -->
+		<table class="table table-hover">
+			<tr>
+				<td>Course Name</td>
+				<td>Credit Hours</td>
+				<td>Grade</td>
+			</tr>
+
+<!-- First row -->
+
+			<tr>
+				<td>
+
+					<input class="form-control" type="text" id="a1">
+
+			</td>
+			<td>
+			<select class="form-control" onchange="changeVal()" id="b1">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+								</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c1">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+		</td>
+	</tr>
+<!-- Second row -->
+
+	<tr>
+				<td><input class="form-control" type="text" id="a2">			
+	</td>
+	<td>
+			<select class="form-control" onchange="changeVal()" id="b2">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>					</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c2">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+	</td>
+		</tr>
+<!-- Third row -->
+		<tr>
+				<td>
+					<input class="form-control" type="text" id="a3">
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b3">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c3">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+	</td>
+			</tr>
+<!-- Forth row -->
+<tr>
+<td>
+					<input class="form-control" type="text" id="a4">
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b4">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c4">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+	</td>
+</tr>
+<!-- Fifth row -->
+	<tr>
+	<td>
+					<input class="form-control" type="text" id="a5">
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b5">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c5">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+	</td>
+</tr>
+<!-- Sixsth row -->
+<tr>
+	<td>
+					<input class="form-control" type="text" id="a6">
+
+				</td>
+				<td>
+			<select class="form-control" onchange="changeVal()" id="b6">
+				<option value="0">-Select-</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+							</td>
+				<td>
+			<select class="form-control" onchange="changeGrd()" id="c6">
+				<option value="0">-Select-</option>
+				<option value="4">A+</option>
+				<option value="3.75">A</option>
+				<option value="3.50">B+</option>
+				<option value="3.00">B</option>
+				<option value="2.50">C+</option>
+				<option value="2.00">C</option>
+				<option value="1.50">D+</option>
+				<option value="1.00">D</option>
+				<option value="0">F</option>
+				<option value="0">WF</option>
+			</select>
+	</td>
+</tr>
+	<!-- Buttons -->
+
+
+		</table>
+
+
+
+<!-- Calculate Button -->
+		<button class="btn btn-primary" onclick="viewResults()">Calculate</button>
+<!--Reset Button -->
+		<button class="btn btn-default" onclick="clear()">Clear</button>
+		<br/>
+
+<br/>
+<br/>
+<!-- Results Should be displayed here -->
+<p id="Result"></p>
+
+		</div>
+
+</BODY>
+
+</HTML>

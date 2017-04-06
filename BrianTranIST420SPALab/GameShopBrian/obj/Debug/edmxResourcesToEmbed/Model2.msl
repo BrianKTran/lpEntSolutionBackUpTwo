@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ist420grp5Model1StoreContainer" CdmEntityContainer="ist420grp5Entities1">
+    <EntitySetMapping Name="tblCustomerBrianTrans">
+      <EntityTypeMapping TypeName="ist420grp5Model1.tblCustomerBrianTran">
+        <MappingFragment StoreEntitySet="tblCustomerBrianTran">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerSSN" ColumnName="CustomerSSN" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerActive" ColumnName="CustomerActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInventoryBrianTrans">
+      <EntityTypeMapping TypeName="ist420grp5Model1.tblInventoryBrianTran">
+        <MappingFragment StoreEntitySet="tblInventoryBrianTran">
+          <ScalarProperty Name="fldInventoryPrice" ColumnName="fldInventoryPrice" />
+          <ScalarProperty Name="fldInventoryName" ColumnName="fldInventoryName" />
+          <ScalarProperty Name="fldInventoryID" ColumnName="fldInventoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

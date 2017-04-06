@@ -1,0 +1,24 @@
+[WebGet(UriTemplate = "/Create?CustomerName={custName}&CustomerSSN={custSSN}&CustomerEmail={custEmail}&CustomerPhone={custPhone}",
+            ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        string CreateCustomer(string custName, string custSSN, string custEmail, string custPhone);
+
+        [WebGet(UriTemplate = "/Update?CustomerID={custID}&CustomerName={custName}&CustomerSSN={custSSN}&CustomerEmail={custEmail}&CustomerPhone={custPhone}",
+             ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        bool UpdateCustomer(int custID, string custName, string custSSN, string custEmail, string custPhone);
+
+        [WebGet(UriTemplate = "/Read?CustomerID={custID}",
+            ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        tblCustomer ReadCustomer(int custID);
+
+        [WebGet(UriTemplate = "/Delete?CustomerID={custID}",
+            ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        bool DeleteCustomer(int custID);
+
+        [WebGet(UriTemplate = "/ReadAll",
+            ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        tblCustomer[] ReadCustomerList();
