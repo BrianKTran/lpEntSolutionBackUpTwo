@@ -80,12 +80,12 @@
     <Content Include="bin\EntityFramework.xml" />
     <Content Include="bin\GameShopBrian.dll" />
     <Content Include="bin\GameShopBrian.pdb" />
-    <Content Include="BootstrapCreate.html" />
-    <Content Include="BootstrapDelete.html" />
-    <Content Include="BootstrapRead.html" />
-    <Content Include="BootstrapReadAll.html" />
-    <Content Include="BootstrapUpdate.html" />
-    <Content Include="CustomerInterface.txt" />
+    <Content Include="Bootstrap\BootstrapCreate.html" />
+    <Content Include="Bootstrap\BootstrapDelete.html" />
+    <Content Include="Bootstrap\BootstrapRead.html" />
+    <Content Include="Bootstrap\BootstrapReadAll.html" />
+    <Content Include="Bootstrap\BootstrapUpdate.html" />
+    <Content Include="Html\CustomerInterface.txt" />
     <Content Include="customerSeed.sql" />
     <Content Include="gpaCalc\css\bootstrap-theme.css" />
     <Content Include="gpaCalc\css\bootstrap-theme.min.css" />
@@ -96,7 +96,12 @@
     <Content Include="gpaCalc\js\bootstrap.js" />
     <Content Include="gpaCalc\js\bootstrap.min.js" />
     <Content Include="gpaCalc\js\functions.js" />
-    <Content Include="HtmGetInvoice.html" />
+    <Content Include="Html\HtmGetInvoice.html" />
+    <Content Include="indexDelete.html" />
+    <Content Include="indexUpdate.html" />
+    <Content Include="indexInfo.html" />
+    <Content Include="indexAdd.html" />
+    <Content Include="index.html" />
     <Content Include="Knockout\KnockoutCreate.html" />
     <Content Include="Knockout\KnockoutDelete.html" />
     <Content Include="Knockout\KnockoutRead.html" />
@@ -205,8 +210,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HtmlGetInventory.html" />
-    <Content Include="HtmlPage1.html" />
+    <Content Include="Html\HtmlGetInventory.html" />
+    <Content Include="Html\HtmlPage1.html" />
     <Content Include="RESTService.svc" />
     <Content Include="sbAdmin\.gitignore" />
     <Content Include="sbAdmin\data\flot-data.js" />
