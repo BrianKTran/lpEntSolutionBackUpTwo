@@ -44,3 +44,4 @@ C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBria
 C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\bin\GameShopBrian.pdb
 C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.dll
 C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.pdb
+C:\Users\Brian\Desktop\lpEntSolutionBackUpTwo\BrianTranIST420SPALab\GameShopBrian\obj\Debug\GameShopBrian.csprojResolveAssemblyReference.cache
