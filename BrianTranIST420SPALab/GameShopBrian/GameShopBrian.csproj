@@ -97,6 +97,7 @@
     <Content Include="gpaCalc\js\bootstrap.min.js" />
     <Content Include="gpaCalc\js\functions.js" />
     <Content Include="Html\HtmGetInvoice.html" />
+    <Content Include="img\lplogo.png" />
     <Content Include="indexDelete.html" />
     <Content Include="indexUpdate.html" />
     <Content Include="indexInfo.html" />
@@ -106,6 +107,7 @@
     <Content Include="Knockout\KnockoutDelete.html" />
     <Content Include="Knockout\KnockoutRead.html" />
     <Content Include="Knockout\KnockoutUpdate.html" />
+    <Content Include="login.html" />
     <Content Include="Model1.Context.tt">
       <DependentUpon>Model1.edmx</DependentUpon>
       <Generator>TextTemplatingFileGenerator</Generator>
