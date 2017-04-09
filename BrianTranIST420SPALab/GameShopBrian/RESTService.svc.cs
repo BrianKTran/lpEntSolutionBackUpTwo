@@ -14,10 +14,7 @@ namespace GameShopBrian
 
     public partial class ist420grp5Entities1
     {
-        public void ReadCustomerList()
-        {
-            throw new NotImplementedException();
-        }
+      
 
         public override int SaveChanges()
         {

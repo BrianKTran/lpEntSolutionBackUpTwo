@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GameShopBrian;
+using lpconcept;
 //using NUnit.Framework;
 
 namespace RestTest
@@ -8,22 +9,38 @@ namespace RestTest
     [TestClass]
     public class Crud
     {
-        
-        private RESTService customer;
+        private CourseDataService _service;
+        //private RESTService customer;
+
         [TestMethod]
-        public void ShouldReadAll()
+        public void Get_Course_Test()
         {
-            ist420grp5Entities1 entities = new ist420grp5Entities1();
-                //Arrange
-                customer = new RESTService();
+            //Arrange
+            _service = new CourseDataService();
+
             //Act
-            customer.ReadCustomerList();
+            _service.GetCourses();
 
             //Assert
 
-            Equals(customer.ReadCustomerList());
-        
- }
+            Equals(_service.GetCourses());
+
+        }
+
+        //       [TestMethod]
+        //       public void ShouldReadAll()
+        //       {
+        //           ist420grp5Entities1 entities = new ist420grp5Entities1();
+        //               //Arrange
+        //               customer = new RESTService();
+        //           //Act
+        //           customer.ReadCustomerList();
+
+        //           //Assert
+
+        //           Equals(customer.ReadCustomerList());
+
+        //}
     }
 
      //   [TestMethod]

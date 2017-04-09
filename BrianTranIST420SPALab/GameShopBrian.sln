@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShopBrian", "GameShopBrian\GameShopBrian.csproj", "{B3CD1ABA-F53D-4AEF-8FD6-C650E387509A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LionPathConcept", "GameShopBrian\LionPathConcept.csproj", "{B3CD1ABA-F53D-4AEF-8FD6-C650E387509A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTest", "RestTest\RestTest.csproj", "{03E829B4-ECD7-4465-8607-37DEAC3351B0}"
 EndProject

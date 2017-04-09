@@ -88,6 +88,7 @@
     <Content Include="Bootstrap\BootstrapRead.html" />
     <Content Include="Bootstrap\BootstrapReadAll.html" />
     <Content Include="Bootstrap\BootstrapUpdate.html" />
+    <Content Include="sbAdmin\courseService.asmx" />
     <Content Include="Html\CustomerInterface.txt" />
     <Content Include="customerSeed.sql" />
     <Content Include="gpaCalc\css\bootstrap-theme.css" />
@@ -373,6 +374,8 @@
       <DependentUpon>Model1.tt</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sbAdmin\Course.cs" />
+    <Compile Include="sbAdmin\CourseDataService.cs" />
     <Compile Include="CreditCard.cs">
       <DependentUpon>Model1.tt</DependentUpon>
       <SubType>Code</SubType>

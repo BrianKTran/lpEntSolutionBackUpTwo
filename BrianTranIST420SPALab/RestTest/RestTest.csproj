@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GameShopBrian\GameShopBrian.csproj">
+    <ProjectReference Include="..\GameShopBrian\LionPathConcept.csproj">
       <Project>{b3cd1aba-f53d-4aef-8fd6-c650e387509a}</Project>
-      <Name>GameShopBrian</Name>
+      <Name>LionPathConcept</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
