@@ -88,6 +88,7 @@
     <Content Include="Bootstrap\BootstrapRead.html" />
     <Content Include="Bootstrap\BootstrapReadAll.html" />
     <Content Include="Bootstrap\BootstrapUpdate.html" />
+    <Content Include="indexAdd.html" />
     <Content Include="sbAdmin\courseService.asmx" />
     <Content Include="Html\CustomerInterface.txt" />
     <Content Include="coursePatch.sql" />
@@ -105,7 +106,7 @@
     <Content Include="indexDelete.html" />
     <Content Include="indexUpdate.html" />
     <Content Include="indexInfo.html" />
-    <Content Include="indexAdd.html" />
+    <Content Include="sbAdmin\pages\indexAdd.html" />
     <Content Include="index.html" />
     <Content Include="Knockout\KnockoutCreate.html" />
     <Content Include="Knockout\KnockoutDelete.html" />

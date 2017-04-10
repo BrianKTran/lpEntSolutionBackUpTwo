@@ -27,6 +27,76 @@ namespace RestTest
             Equals(_service.GetCourses());
 
         }
+        [TestMethod]
+        public void Create_Course_Test()
+        {
+            using (ist420grp5Entities1 entities = new ist420grp5Entities1())
+            {
+                //Insert a Record
+                //Create the custent cust obect
+                tblCustomerBrianTran cust = new tblCustomerBrianTran();
+                cust.CustomerName = "IST";
+                cust.CustomerSSN = "911";
+                cust.CustomerEmail = "ggez@gmail.com";
+                cust.CustomerPhone = "911";
+                cust.CustomerID = 911;
+                //Call the method to add the object to the table
+                entities.tblCustomerBrianTrans.Add(cust);
+                //Save the changes to the DB
+                //entities.SaveChanges();
+                //cust.CustomerID will contain the record number
+            }
+            //ist420grp5Entities1 et = new ist420grp5Entities1();
+            //tblCustomerBrianTran newTable = et.tblCustomerBrianTrans.Find(911);
+            //if (newTable==null) 
+            //{
+            //    Assert.Fail();
+            //}
+        }
+
+
+        [TestMethod]
+        public void Update_Course_Test()
+
+        {
+          
+
+            //using (ist420grp5Entities1 entities = new ist420grp5Entities1())
+            //{
+            //    //Update a Record
+            //    //Create the custent cust object
+            //    tblCustomerBrianTran cust = new tblCustomerBrianTran();
+            //    cust = entities.tblCustomerBrianTrans.Find(custID);
+            //    cust.CustomerName = (custName == null) ? cust.CustomerName : custName;
+            //    cust.CustomerSSN = (custSSN == null) ? cust.CustomerSSN : custSSN;
+            //    cust.CustomerEmail = (custEmail == null) ? cust.CustomerEmail : custEmail;
+            //    cust.CustomerPhone = (custPhone == null) ? cust.CustomerPhone : custPhone;
+            //    //Save the changes to the DB
+            //    entities.SaveChanges();
+            //    //cust.fldStudentID will contain the record number
+            //    if (cust.CustomerID > 0)
+            //        return true;
+            //    else
+            //        return false;
+            //}
+
+        }
+
+        //[TestMethod]
+        //public void Get_Course_Info_Test()
+        //{
+
+        //    //Arrange
+        //    _service = new CourseDataService();
+
+        //    //Act
+        //    _service.GetCoursesById(CourseID);
+
+        //    //Assert
+
+        //    Equals(_service.GetCourses(CourseID));
+
+        //}
 
         //       [TestMethod]
         //       public void ShouldReadAll()
