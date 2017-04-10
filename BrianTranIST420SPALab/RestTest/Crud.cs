@@ -15,6 +15,7 @@ namespace RestTest
         [TestMethod]
         public void Get_Course_Test()
         {
+
             //Arrange
             _service = new CourseDataService();
 

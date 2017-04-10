@@ -90,7 +90,7 @@
     <Content Include="Bootstrap\BootstrapUpdate.html" />
     <Content Include="sbAdmin\courseService.asmx" />
     <Content Include="Html\CustomerInterface.txt" />
-    <Content Include="customerSeed.sql" />
+    <Content Include="coursePatch.sql" />
     <Content Include="gpaCalc\css\bootstrap-theme.css" />
     <Content Include="gpaCalc\css\bootstrap-theme.min.css" />
     <Content Include="gpaCalc\css\bootstrap.css" />
